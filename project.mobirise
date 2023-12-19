@@ -1,0 +1,147 @@
+{
+  "settings": {
+    "name": "Site 2023-12-19 13:59",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#9fe870",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.4,
+        "isRoundedImages": true,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      }
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.9.8",
+    "siteFonts": [],
+    "robotsSwitcher": true,
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nSitemap: https://solflarwallet.github.io/sitemap.xml",
+    "sitemapSwitcher": true,
+    "siteUrl": "https://solflarwallet.github.io/",
+    "sitemapSwitcherAuto": "on",
+    "imageResize": true,
+    "usedWebp": true,
+    "favicon": false,
+    "mbrsiteDomain": "7vvnz33nmd",
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 2,
+    "versionPublish": "5.9.8"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Solflare Wallet™ | Home Official Site",
+        "meta_descr": "Solflare is the safest way to start exploring Solana. Buy, store, swap tokens & NFTs and access Solana DeFi from web or mobile. Download ...",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image03\" group=\"Image & Video\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <a href=\"https://solflare.hpage.com/\"><img src=\"@PROJECT_PATH@/assets/images/solflare.png\" alt=\"Solflare Wallet\"></a>\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 pb-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_cid": "tYS7T5vgRh",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "image04-0"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "@media (max-width: 767px)": {
+                "padding": "2rem 1.5rem"
+              },
+              "@media (min-width: 768px) and (max-width: 991px)": {
+                "padding": "2.25rem"
+              },
+              "@media (min-width: 992px)": {
+                "padding": "4rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#000000",
+              "text-align": "left"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left",
+              "color": "#000000"
+            }
+          },
+          "_name": "article07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article07\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"8\" max=\"12\" step=\"1\" value=\"10\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#ffffff\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#edefeb\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n        <div class=\"card-wrapper\">\n          <h3 class=\"card-title mbr-fonts-style mbr-white mt-3 mb-4\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\"><b><a href=\"https://solflarwallet.github.io\" class=\"text-primary\">Solflare Wallet</a>™ | Home Official Site</b></h3>\n          <div class=\"row card-box align-left\">\n            \n            \n            \n            <div class=\"item features-without-image col-12 active\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b><a href=\"https://solflare.com/\" class=\"text-primary\">Solflare Wallet</a>: Navigating the Solana Ecosystem with Confidence</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">In the dynamic realm of blockchain technology, the Solana ecosystem has emerged as a powerhouse for decentralized applications and digital asset management. As users explore the possibilities within this rapidly evolving landscape, the importance of a secure and user-friendly wallet becomes paramount. Among the array of options, Solflare Wallet has gained recognition for its unique features, robust security, and seamless integration with the Solana blockchain. This article aims to shed light on the Solflare Wallet, delving into its key attributes, security measures, and its role in shaping the future of crypto storage within the Solana ecosystem.\n<br>\n<br>Genesis of Solflare Wallet\n<br>\n<br>Solflare Wallet was conceived as a decentralized wallet specifically tailored for the Solana blockchain. Launched against the backdrop of Solana's rising prominence in the blockchain space, Solflare sought to address the need for a reliable, efficient, and user-friendly wallet for Solana-based assets. Since its inception, Solflare has evolved to become a go-to choice for users navigating the complexities of the Solana ecosystem.\n<br>\n<br>User-Centric Design\n<br>\n<br>Solflare Wallet distinguishes itself with a user-centric design, prioritizing accessibility for both novice and experienced users. The wallet boasts an intuitive interface that simplifies the onboarding process, allowing users to manage their digital assets effortlessly. From the initial setup to day-to-day transactions, Solflare's design ethos revolves around making the user experience seamless and enjoyable.\n<br>\n<br>Seamless Integration with Solana\n<br>\n<br>A standout feature of Solflare Wallet is its seamless integration with the Solana blockchain. The wallet serves as a gateway for users to interact with various decentralized applications (DApps) and projects within the Solana ecosystem. This integration is instrumental in providing users with a comprehensive toolset, allowing them to participate in decentralized finance (DeFi), non-fungible tokens (NFTs), and other Solana-based activities directly from the wallet interface.\n<br>\n<br>Security Measures\n<br>\n<br>Security is a top priority in the cryptocurrency space, and Solflare Wallet takes this aspect seriously. The wallet employs a non-custodial approach, ensuring that users retain control of their private keys. This decentralized model reduces the risk of centralized vulnerabilities, placing the onus of security directly in the hands of the wallet's users. Solflare also employs advanced encryption techniques to safeguard user data and transactions, enhancing the overall security posture of the wallet.\n<br>\n<br>Multi-Platform Accessibility\n<br>\n<br>Recognizing the diversity in user preferences and the ubiquity of different devices, Solflare Wallet offers multi-platform accessibility. Whether on a desktop, laptop, or mobile device, users can seamlessly access and manage their Solana assets through the Solflare interface. This flexibility ensures that users have the freedom to choose the device that best suits their needs while maintaining a consistent and secure experience.\n<br>\n<br>Token Management and Staking\n<br>\n<br>Solflare Wallet goes beyond simple asset storage, offering users the ability to manage various Solana-based tokens effortlessly. Users can track, send, and receive tokens with ease, making Solflare a comprehensive solution for portfolio management. Additionally, Solflare supports staking, allowing users to participate in the network's consensus mechanism and earn rewards directly from the wallet interface.\n<br>\n<br>Community Engagement and Future Developments\n<br>\n<br>The success of any cryptocurrency project is often intertwined with community engagement, and Solflare Wallet actively fosters a vibrant and engaged user base. Regular updates, community-driven feedback loops, and transparent communication contribute to the wallet's continuous improvement. The development team behind Solflare is committed to staying ahead of the curve, with ongoing plans to introduce new features, integrations, and optimizations to enhance the overall user experience.\n<br>\n<br>Looking Forward: Solflare's Role in the Solana Ecosystem\n<br>\n<br>As the Solana ecosystem continues to expand and gain traction, the role of Solflare Wallet becomes increasingly significant. The wallet not only serves as a secure storage solution but also as a gateway for users to explore and engage with the diverse range of projects within the Solana blockchain. With its user-centric design, robust security measures, and commitment to innovation, Solflare Wallet is poised to play a pivotal role in shaping the future of crypto storage within the Solana ecosystem.\n<br>\n<br>Conclusion\n<br>\n<br>In the ever-evolving landscape of blockchain technology, Solflare Wallet stands as a testament to the possibilities of secure, user-friendly, and feature-rich digital asset management. As users navigate the intricacies of the Solana blockchain, Solflare provides a reliable companion, empowering individuals to interact with decentralized applications and manage their assets with confidence. With its commitment to security, seamless integration, and community engagement, Solflare Wallet is not merely a tool for storing digital assets but a key player in the ongoing evolution of the Solana ecosystem.<br></p>\n              </div>\n            </div>\n          </div>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_cid": "tYS7TMLBcf",
+          "_anchor": "article07-1",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
